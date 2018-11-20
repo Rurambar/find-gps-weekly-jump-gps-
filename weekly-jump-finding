@@ -1,0 +1,14 @@
+clear;
+filename='.\有小周跳.xls';
+A=xlsread(filename,'Rove_31');
+i=1;
+k=1;
+while (i<=3537)
+    x=1:1:6;
+    y=[A{i}{4} A{i+1}{4} A{i+2}{4} A{i+3}{4} A{i+4}{4} A{i+5}{4}];
+    p=polyfit(x,y,5);
+    V=
+    sigma=sqrt(int(
+    f=polyval(p,7);
+    i=i+1;
+end
